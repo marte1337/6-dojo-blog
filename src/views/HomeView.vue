@@ -88,6 +88,7 @@ export default {
 
     //watch & watchEffect
     //watch: Überwachte Value muss explizit, außerhalb der Funktion, angegeben werden, triggert nur, wenn sich diese ändert.
+    //  = lazy, specific state, callback-funct: previous and current state
     //watchEffect: Wird beim mount getriggert und überwacht alle values/dependecies die innerhalb der Funktion angegeben werden.
     const stopWatch = watch(search, () => {
       console.log("watch function ran")
